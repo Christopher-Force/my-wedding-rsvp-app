@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom"
+
 export default function RSVPButton2 () {
   return (
     <div>
-      <button className="btn">RSVP Again</button>
+      <Link to="/rsvp"><button className="btn">Additional RSVP</button></Link>
     </div>
   )
 }

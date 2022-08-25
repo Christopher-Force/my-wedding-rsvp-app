@@ -1,40 +1,66 @@
 import logo from './logo.svg';
 import './App.css';
-import Hero from './Components/Hero/Hero';
+
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  useLocation
 } from "react-router-dom";
+import { useLayoutEffect } from 'react';
+import MapPage from './Components/MapPage/MapPage';
+import HeroText from './Components/Hero/HeroText/HeroText';
+import RSVPPage from './Components/RSVPPage/RSVPPage';
+import Contribute from './Components/Contribute/Contribute';
+import Details from './Components/Details/Details';
+
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children
+}
 
 function App() {
   if (window.location.host.split(".")[0] === "wedding") {
     return (
-      <div className="App">
-        <Hero />
+      
+      <div className="header">
+        
+        
+        <div className="inner-header flex">
+          
+          <Router>
+            <Wrapper>
+              <Routes>
+                <Route path="/" element={<HeroText />} />
+                <Route path="rsvp" element={<RSVPPage />} />
+                <Route path="map" element={<MapPage />} />
+                
+                {/* <Route path="thankyou" element={<Thankyou />} /> */}
+                <Route path="details" element={<Details />} />
+                <Route path="contribute" element={<Contribute />} />
+              </Routes>
+            </Wrapper>
+          </Router>
+        </div>
+        
+        <div>
+          <svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g className="parallax">
+              <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+              <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+              <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+              <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
       </div>
-      // <Router>
-      //   <div className="bg-black">
-      //     <Wrapper>
-      //       <div>
-      //         <LandingNav />
-      //       </div>
-      //       <Routes>
-      //         <Route path="/" element={<RoofLanding />} />
-      //         <Route path="thankyou" element={<ThankYou />} />
-      //       </Routes>
-      //       {/* HIDDEN POPUP */}
-      //       <div>
-      //         <input type="checkbox" id="roof-popup" className="modal-toggle" />
-      //         <label className="modal items-start lg:items-center pt-4 md:pt-8 " for="roof-popup">
-      //           <label className="modal-box w-11/12 md:max-w-5xl pt-4 max-h-screen" for="">
-      //             <PopupContact />
-      //           </label>
-      //         </label>
-      //       </div>
-      //     </Wrapper>
-      //   </div>
-      // </Router>
     )
   }
   else {
