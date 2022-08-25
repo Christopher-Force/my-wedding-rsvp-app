@@ -1,29 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route
-// } from "react-router-dom";
+import Hero from './Components/Hero/Hero';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 function App() {
   if (window.location.host.split(".")[0] === "wedding") {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            This subdomain is working properly.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Hero />
       </div>
       // <Router>
       //   <div className="bg-black">
@@ -55,7 +43,7 @@ function App() {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Subdomain is not working properly.
+            Subdomain is not working properly. Please Contact Site Owner.
           </p>
           <a
             className="App-link"
