@@ -7,7 +7,7 @@ export default function MapPage () {
   return (
     <div>
       <strong>
-        <h1>Map Information</h1>
+        <h1 className="mb-1">Map Information</h1>
       </strong>
       <p>
         Ceremony @ 1:00PM
@@ -22,8 +22,7 @@ export default function MapPage () {
       </p>
       <br />
       <p>
-        Reception To Follow 
-        <br />
+        <strong><h1 className="mb-1">Reception To Follow</h1> </strong>
         Starting @ 2:00-2:30PM Until 6:00-6:30PM
         <br />
         Family-Owned Rental Home - Backyard
