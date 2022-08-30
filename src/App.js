@@ -14,6 +14,7 @@ import RSVPPage from './Components/RSVPPage/RSVPPage';
 import Contribute from './Components/Contribute/Contribute';
 import Details from './Components/Details/Details';
 import Banner from './Components/Banner/Banner';
+import ThankYou from './Components/RSVPPage/ThankYou/ThankYou';
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -27,21 +28,21 @@ function App() {
   if (window.location.host.split(".")[0] === "wedding") {
     return (
 
-      <div className="header fill-viewport">
+      <div className="header fill-viewport ">
 
 
 
         <Router>
+          
+          <div className="inner-header ">
           <Banner />
-          <div className="inner-header flex">
             <Wrapper>
 
               <Routes>
                 <Route path="/" element={<HeroText />} />
                 <Route path="rsvp" element={<RSVPPage />} />
                 <Route path="map" element={<MapPage />} />
-
-                {/* <Route path="thankyou" element={<Thankyou />} /> */}
+                <Route path="thankyou" element={<ThankYou />} />
                 <Route path="details" element={<Details />} />
                 <Route path="contribute" element={<Contribute />} />
               </Routes>

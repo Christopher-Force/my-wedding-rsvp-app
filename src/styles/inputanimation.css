@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin:400);
+
+
+.webdesigntuts-workshop form {
+	background: rgb(255, 255, 255);
+	background: linear-gradient(#ffffff, rgb(191, 247, 149));
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 1px #d2d2d2;
+	font-size: 0px;
+	padding: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.webdesigntuts-workshop input {
+	background: rgb(255, 255, 255);	
+	background: linear-gradient(rgb(255, 255, 255), rgb(65, 194, 242));	
+	border: 1px solid #444;
+	border-radius: 5px 0 0 5px;
+	box-shadow: 0 2px 0 rgb(255, 255, 255);
+	color: #888;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0 10px;
+	/* text-shadow: 0 -1px 0 #000; */
+}
+
+.ie .webdesigntuts-workshop input {
+	line-height: 40px;
+}
+
+.webdesigntuts-workshop input::-webkit-input-placeholder {
+   color: #888;
+}
+
+.webdesigntuts-workshop input:-moz-placeholder {
+   color: #888;
+}
+
+.webdesigntuts-workshop input:focus {
+	animation: glow 800ms ease-out infinite alternate;
+	background: #ffffff;
+	background: linear-gradient(#ffffff, #aeddff);
+	border-color: #393;
+	box-shadow: 0 0 5px rgba(255, 255, 255, 0.2), inset 0 0 5px rgba(255, 255, 255, 0.1), 0 2px 0 rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	outline: none;
+}
+
+.webdesigntuts-workshop input:focus::-webkit-input-placeholder { 
+	color: #efe;
+}
+
+.webdesigntuts-workshop input:focus:-moz-placeholder {
+	color: #efe;
+}
+
+.webdesigntuts-workshop button {
+	background: #222;
+	background: linear-gradient(rgb(255, 227, 135), rgb(222, 193, 120));
+	border: 1px solid #444;
+	/* border-left-color: #000; */
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0 2px 0 rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 40px;
+	margin-top: 15px;
+	position: relative;
+	text-shadow: 0 -1px 0 rgb(255, 255, 255);
+}	
+
+.webdesigntuts-workshop button:hover,
+.webdesigntuts-workshop button:focus {
+	background: #ffffff;
+	background: linear-gradient(#ffffff, #ffffff);
+	color: rgb(26, 99, 255);
+	outline: none;
+}
+
+.webdesigntuts-workshop button:active {
+	background: #fffbfb;
+	background: linear-gradient(#3bff38, #292929);
+	box-shadow: 0 1px 0 #000, inset 1px 0 1px rgb(255, 255, 255);
+	color: white;
+	top: 1px;
+}
+
+
+@keyframes glow {
+    0% {
+		border-color: rgb(178, 226, 123);
+		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 rgb(255, 255, 255);
+    }	
+    100% {
+		border-color: rgb(216, 245, 216);
+		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 rgb(127, 167, 133);
+    }
+}

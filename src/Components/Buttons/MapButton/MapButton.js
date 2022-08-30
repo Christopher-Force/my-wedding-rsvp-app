@@ -10,7 +10,7 @@ export default function MapButton() {
         <span className="material-symbols-outlined">
         travel_explore
       </span>
-        <span>Addresses</span>
+        <span>Addresses <br /> & Times </span>
       </button></Link>
     </div>
   )
