@@ -20,6 +20,15 @@ p {
   color: #ffffff;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 200,
+  'opsz' 48
+}
+
+
 .u-line {
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
@@ -63,7 +72,7 @@ p {
 }
 
 .inner-header {
-  height:65vh;
+  height:80vh;
   width:100%;
   margin: 0;
   padding: 0;

@@ -6,7 +6,7 @@ import "./HeroText.css";
 
 export default function HeroText() {
   return (
-    <div className="inner-header flex">
+    <div className="inner-header flex items-start">
       <div>
         <div>
           <div>
@@ -14,25 +14,30 @@ export default function HeroText() {
               11.12.22
             </h1>
           </div>
+          <br/>
           <div>
-            <h2 className="names">Christopher and Precious</h2>
+            <h2 className="names text-5xl">Christopher and Precious</h2>
           </div>
+          <br/>
           <div>
             <strong>
-              <h3 className="headline">Celebrate Our Special Day With Us!</h3>
+              <h3 className="headline text-xl">Celebrate Our Special Day With Us!</h3>
             </strong>
           </div>
           <br />
           <div>
-            <h3 className="headline u-line ">Please RSVP by 09.15.22</h3>
+            <h3 className="headline u-line text-2xl"><strong>Please RSVP by 09.15.22</strong></h3>
           </div>
         </div>
         <br />
-
-        <RSVPButton />
         <br />
-        <div className='flex'>
+        <div className="flex gap-2">
+          <RSVPButton />
           <MapButton />
+        </div>
+        <br />
+        <div className='flex gap-2'>
+        
           <ContributeButton />
           <DetailsButton />
         </div>

@@ -13,6 +13,7 @@ import HeroText from './Components/Hero/HeroText/HeroText';
 import RSVPPage from './Components/RSVPPage/RSVPPage';
 import Contribute from './Components/Contribute/Contribute';
 import Details from './Components/Details/Details';
+import Banner from './Components/Banner/Banner';
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -25,26 +26,29 @@ const Wrapper = ({ children }) => {
 function App() {
   if (window.location.host.split(".")[0] === "wedding") {
     return (
-      
+
       <div className="header fill-viewport">
-        
-        
-        <div className="inner-header flex">
-          
-          <Router>
-            <Wrapper> 
+
+
+
+        <Router>
+          <Banner />
+          <div className="inner-header flex">
+            <Wrapper>
+
               <Routes>
                 <Route path="/" element={<HeroText />} />
                 <Route path="rsvp" element={<RSVPPage />} />
                 <Route path="map" element={<MapPage />} />
-                
+
                 {/* <Route path="thankyou" element={<Thankyou />} /> */}
                 <Route path="details" element={<Details />} />
                 <Route path="contribute" element={<Contribute />} />
               </Routes>
             </Wrapper>
-          </Router>
-        </div>
+          </div>
+        </Router>
+
         <div>
           <svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
