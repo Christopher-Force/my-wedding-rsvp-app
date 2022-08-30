@@ -4,7 +4,9 @@ import '../Button.css';
 export default function DetailsButton () {
   return (
     <div>
-      <Link to='/details'><button className="btn gap-2 salmon text-black">
+      <Link to='/details'>
+        <button className="main-buttons btn gap-2 text-black w-full">
+
       <span className="material-symbols-outlined">
 history_edu
 </span>
@@ -12,3 +14,4 @@ history_edu
     </div>
   )
 }
+

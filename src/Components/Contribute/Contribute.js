@@ -15,25 +15,26 @@ export default function Contribute() {
           </div>
           <div>
             <h2 className="names text-3xl">Christopher and Precious</h2>
+            
           </div>
         </div>
       <div className="">
         <div className="">
-          <h1 className="text-md u-line">Amazon Registry:</h1>
+          <h1 className="text-md u-line pb-2">Amazon Registry:</h1>
+          <a href="https://amazon.com" class="amazon w-1/2" target="_blank" rel="noreferrer">Amazon Registry</a>
         </div>
         <br/>
         <div className="flex flex-col gap-2 mb-4">
           <h1><span className="text-md u-line">Contribute To Our Honeymoon Fund:</span> <h2 className="text-sm">Powered by Stripe</h2></h1>
-          <a href="https://buy.stripe.com/7sI7waduj45IeMU6or" class="chipButton w-full">Chip in $10</a>
-          <a href="https://buy.stripe.com/bIY8Aedujau69sA3cc" class="chipButton w-full">Chip in $25</a>
-          <a href="https://buy.stripe.com/9AQeYC2PF31E0W49AB" class="chipButton w-full">Chip in Custom Amount</a>
+          <a href="https://buy.stripe.com/7sI7waduj45IeMU6or" class="chipButton w-full" target="_blank" rel="noreferrer">Chip in $10</a>
+          <a href="https://buy.stripe.com/bIY8Aedujau69sA3cc" class="chipButton w-full" target="_blank" rel="noreferrer">Chip in $25</a>
+          <a href="https://buy.stripe.com/9AQeYC2PF31E0W49AB" class="chipButton w-full" target="_blank" rel="noreferrer">Chip in Custom Amount</a>
         </div>
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 pb-2">
         <RSVPButton />
         <MapButton />
       </div>
-      <br />
       <div className='flex gap-2'>
 
         <HomeButton />

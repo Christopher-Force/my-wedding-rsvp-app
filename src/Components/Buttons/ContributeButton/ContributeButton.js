@@ -5,7 +5,7 @@ export default function ContributeButton () {
   return (
     <div>
       <Link to='/contribute'>
-        <button className="btn gap-2 salmon text-black">
+        <button className="main-buttons btn gap-2 text-black w-full">
           <span className="material-symbols-outlined">
             redeem
           </span>

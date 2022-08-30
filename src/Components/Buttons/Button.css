@@ -2,6 +2,32 @@
   background-color: #9db2b0  ;
 }
 
+.main-buttons {
+	box-shadow:inset 0px 1px 0px 0px #bababa;
+	background:linear-gradient(to bottom, #91cfe6 5%, #d1e7ff 100%);
+	background-color:#91cfe6;
+	border-radius:6px;
+	border:1px solid #000000;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 2px 12px #ffffff;
+}
+.main-buttons:hover {
+	background:linear-gradient(to bottom, #d1e7ff 5%, #91cfe6 100%);
+	background-color:#d1e7ff;
+}
+.main-buttons:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
 /* #cf6544 */
 /* #fda387 */
 
