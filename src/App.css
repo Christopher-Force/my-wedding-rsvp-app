@@ -81,7 +81,7 @@ p {
 .flex { /*Flexbox for containers*/
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
 }
 

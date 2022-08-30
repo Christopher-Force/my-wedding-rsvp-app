@@ -9,36 +9,25 @@ export default function Contribute() {
     <div>
       <div>
           <div>
-            <h1 className="date">
+            <h1 className="date text-4xl flex mt-4">
               11.12.22
             </h1>
           </div>
-          <br/>
           <div>
-            <h2 className="names text-5xl">Christopher and Precious</h2>
-          </div>
-          <br/>
-          <div>
-            <strong>
-              <h3 className="headline text-xl">Celebrate Our Special Day With Us!</h3>
-            </strong>
-          </div>
-          <br />
-          <div>
-            <h3 className="headline u-line text-2xl"><strong>Please RSVP by 09.15.22</strong></h3>
+            <h2 className="names text-3xl">Christopher and Precious</h2>
           </div>
         </div>
+      <div className="">
+        <div className="">
+          <h1 className="text-md u-line">Amazon Registry:</h1>
+        </div>
         <br/>
-      <div>
-        <h1>Amazon Registry:</h1>
-      </div>
-      <br/>
-      <div className="flex flex-col gap-2 mb-8">
-        <h1>Contribute To Our Honeymoon Fund:</h1>
-        <a href="https://buy.stripe.com/7sI7waduj45IeMU6or" class="chipButton w-full">Chip in $10</a>
-        <a href="https://buy.stripe.com/bIY8Aedujau69sA3cc" class="chipButton w-full">Chip in $25</a>
-        <a href="https://buy.stripe.com/3csg2GbmbcCefQY8wy" class="chipButton w-full">Chip in $50</a>
-        <a href="https://buy.stripe.com/9AQeYC2PF31E0W49AB" class="chipButton w-full">Chip in Custom Amount</a>
+        <div className="flex flex-col gap-2 mb-4">
+          <h1><span className="text-md u-line">Contribute To Our Honeymoon Fund:</span> <h2 className="text-sm">Powered by Stripe</h2></h1>
+          <a href="https://buy.stripe.com/7sI7waduj45IeMU6or" class="chipButton w-full">Chip in $10</a>
+          <a href="https://buy.stripe.com/bIY8Aedujau69sA3cc" class="chipButton w-full">Chip in $25</a>
+          <a href="https://buy.stripe.com/9AQeYC2PF31E0W49AB" class="chipButton w-full">Chip in Custom Amount</a>
+        </div>
       </div>
       <div className="flex gap-2">
         <RSVPButton />
