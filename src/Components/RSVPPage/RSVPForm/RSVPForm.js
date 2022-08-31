@@ -81,7 +81,7 @@ export default function ContractForm () {
                   class="checked:bg-green-500 "
                   Value="Yes"
                   required />
-                  <span class="label-text ml-2">Yes, I'm Going</span>
+                  <span class="label-text ml-2 text-black">Yes, I'm Going</span>
                 </label>
               </div>
               <div class="form-control">
@@ -94,7 +94,7 @@ export default function ContractForm () {
                   class="checked:bg-green-500 "
                   value="No"
                   required />
-                  <span class="label-text ml-2">No, I Can't</span>
+                  <span class="label-text ml-2 text-black">No, I Can't</span>
                 </label>
               </div>
             </div>

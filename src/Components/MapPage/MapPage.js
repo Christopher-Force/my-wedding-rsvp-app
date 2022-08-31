@@ -7,15 +7,16 @@ export default function MapPage () {
   return (
     <div>
       <div>
-          <div>
+          <div className="mb-2">
             <h3 className="headline u-line text-2xl"><strong>Both Addresses</strong></h3>
+            <h2>(Click Below for Google Maps)</h2>
           </div>
-          <br />
+
         </div>
       
-      <div>
+      <div className="">
       <strong>
-        <h1 className="mb-1">Ceremony @ 1:00PM <br />(Click Below for Google Maps)</h1>
+        <h1 className="">Ceremony @ 1:00PM</h1>
       </strong>
         <a href="https://goo.gl/maps/NXtzsHuM1LHbMdcy8" target="_blank" rel="noreferrer" className="u-line">
           PAWLEY'S ISLAND BEACH
@@ -27,14 +28,11 @@ export default function MapPage () {
           Pawleys Island, SC 29585
         </a>
       </div>
-      <br />
-      <div>
-        <strong><h1 className="mb-1">
+        <div className="mb-4 mt-4">
+        <strong><h1 className="">
           Reception To Follow 
-        <br/> Starting @ 2:00-2:30PM Until 6:00-6:30PM  
-        <br/> (Click Below for Google Maps)</h1> </strong>
-        Starting @ 2:00-2:30PM Until 6:00-6:30PM 
-          <br />
+        <br/> Starting @ 2:00-2:30PM <br /> Until 6:00-6:30PM  
+        </h1> </strong>
         <a href="https://goo.gl/maps/aYWDZp5McfiqyrX69" target="_blank" rel="noreferrer" className="u-line">
           
           Family-Owned Rental Home - Backyard
@@ -45,15 +43,11 @@ export default function MapPage () {
         </a>
       </div>
 
-
-      <br />
-
-      <div className="flex gap-2">
+      <div className="flex gap-1 pb-1">
           <RSVPButton />
           <HomeButton />
         </div>
-        <br />
-        <div className='flex gap-2'>
+        <div className='flex gap-1'>
         
           <ContributeButton />
           <DetailsButton />

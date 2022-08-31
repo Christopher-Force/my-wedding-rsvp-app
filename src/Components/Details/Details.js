@@ -22,7 +22,7 @@ export default function Details () {
         
 
         
-        <span>For the ceremony, you have the option of parking at the beach, and then traveling back to the hotel to get ready for the reception. <strong>Please, utilize apps like Lyft and Uber for the reception.</strong> </span>
+        <span className="">For the ceremony, you have the option of parking at the beach, and then traveling back to the hotel to get ready for the reception. <strong>Please, utilize apps like Lyft and Uber for the reception.</strong> </span>
         <br/><a href="https://www.hotels.com/Hotel-Search?adults=2&d1=2022-11-11&d2=2022-11-13&destination=Pawleys%20Island%2C%20South%20Carolina%2C%20United%20States%20of%20America&endDate=2022-11-13&latLong=33.433342%2C-79.121361&regionId=55498&selected=&semdtl=&sort=RECOMMENDED&startDate=2022-11-11&theme=&useRewards=false&userIntent=" target="_blank" rel="noreferrer" className="u-line btn main-buttons btn-sm">Find Hotels</a> 
 
 

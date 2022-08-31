@@ -18,17 +18,18 @@ export default function Contribute() {
             
           </div>
         </div>
-      <div className="">
-        <div className="">
-          <h1 className="text-md u-line pb-2">Amazon Registry:</h1>
-          <a href="https://amazon.com" class="amazon w-1/2" target="_blank" rel="noreferrer">Amazon Registry</a>
+      <div className="mt-2">
+        <div className="mx-2 ">
+          <h1 className="text-md u-line pb-2">Wedding Registry:</h1>
+          <a href="https://www.amazon.com/wedding/precious-holmes-christopher-force--november-2022/registry/2JCAICRB6EUM8" class="amazon w-full max-w-[500px]" target="_blank" rel="noreferrer">Amazon Registry</a>
         </div>
-        <br/>
-        <div className="flex flex-col gap-2 mb-4">
+        <div className="flex flex-col gap-2  mt-4 mb-4 ">
           <h1><span className="text-md u-line">Contribute To Our Honeymoon Fund:</span> <h2 className="text-sm">Powered by Stripe</h2></h1>
-          <a href="https://buy.stripe.com/7sI7waduj45IeMU6or" class="chipButton w-full" target="_blank" rel="noreferrer">Chip in $10</a>
-          <a href="https://buy.stripe.com/bIY8Aedujau69sA3cc" class="chipButton w-full" target="_blank" rel="noreferrer">Chip in $25</a>
-          <a href="https://buy.stripe.com/9AQeYC2PF31E0W49AB" class="chipButton w-full" target="_blank" rel="noreferrer">Chip in Custom Amount</a>
+          <div className="justify-center flex flex-col gap-2 items-center mx-2">
+            <a href="https://buy.stripe.com/7sI7waduj45IeMU6or" class="chipButton w-full max-w-[500px]" target="_blank" rel="noreferrer">Chip in $10</a>
+            <a href="https://buy.stripe.com/bIY8Aedujau69sA3cc" class="chipButton w-full max-w-[500px]" target="_blank" rel="noreferrer">Chip in $25</a>
+            <a href="https://buy.stripe.com/9AQeYC2PF31E0W49AB" class="chipButton w-full max-w-[500px]" target="_blank" rel="noreferrer">Chip in Custom Amount</a>
+          </div>
         </div>
       </div>
       <div className="flex gap-2 pb-2">
